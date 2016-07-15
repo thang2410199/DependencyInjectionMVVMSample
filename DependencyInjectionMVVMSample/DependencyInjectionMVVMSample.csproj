@@ -95,19 +95,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContactModel.cs" />
+    <Compile Include="Model\ContactModel.cs" />
     <Compile Include="ContactService.cs" />
-    <Compile Include="IContactModel.cs" />
-    <Compile Include="IContactService.cs" />
-    <Compile Include="DetailPage.xaml.cs">
-      <DependentUpon>DetailPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="FakeContactService.cs" />
-    <Compile Include="IMainViewModel.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Interface\IContactModel.cs" />
+    <Compile Include="Interface\IContactService.cs" />
+    <Compile Include="Model\FakeContactService.cs" />
+    <Compile Include="Interface\IMainViewModel.cs" />
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocator.cs" />
   </ItemGroup>
@@ -132,11 +129,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DetailPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
