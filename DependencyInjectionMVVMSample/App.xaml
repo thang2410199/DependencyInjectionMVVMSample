@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="DependencyInjectionMVVMSample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DependencyInjectionMVVMSample"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <local:ServiceLocator x:Key="ServiceLocator" />
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
